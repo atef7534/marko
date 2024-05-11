@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko - Home Page</title>
+
+    <!-- styling sheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="marko-logo">
+                <img src="imgs/logo.png" alt="no-img">
+            </a>
+        </div>
+        <form action="" class="form-search">
+            <div class="find">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="" id="" placeholder="Search products, brands and categories" aria-label="Search" value="" autocomplete="off" required="">
+            </div>
+            <button class="btn">Search</button>
+        </form>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropMenu()"><i class="fa-regular fa-circle-question"></i>Help
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropMenu()"><i class="fa-regular fa-user"></i>Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropMenu()"><i class="fa-solid fa-cart-shopping"></i>Cart
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

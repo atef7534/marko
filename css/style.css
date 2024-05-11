@@ -1,0 +1,207 @@
+/* main colors */
+:root
+{
+    --main-background: tomato;
+}
+
+* 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "cairo", sans-serif;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+
+/* start styling */
+
+/* header */
+header.header 
+{
+    max-width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+header .logo
+{
+    /* there is no content here! */
+}
+
+header form.form-search
+{
+    /* there is no content here! */
+    color: #313133;
+    font-size: .875rem;
+    direction: ltr;
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 40%;
+    padding-right: 8px;
+    padding-left: 8px;
+    display: flex;
+}
+
+form.form-search .find
+{
+    color: #313133;
+    font-size: .875rem;
+    direction: ltr;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #a3a3a6;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+}
+
+form.form-search .find i
+{
+    color: #313133;
+    direction: ltr;
+    font-size: 15px;
+    box-sizing: border-box;
+    fill: #75757a;
+    flex-shrink: 0;
+    line-height: 2.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+form.form-search .find input
+{
+    direction: ltr;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    flex-grow: 1;
+    box-shadow: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    padding: 5px;
+}
+form.form-search button
+{
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+    margin: auto 0px auto 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 8px;
+    background-color: rgba(255, 99, 71, 0.838);
+    color: #FFF;
+    transition: background-color 0.6s;
+    transition: border 0.4s;
+}
+form.form-search button:hover 
+{
+    background-color: tomato;
+}
+form.form-search button:focus
+{
+    box-shadow: 0px 0px 0px 4px lightblue;
+    border-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start navbar */
+.navbar 
+{
+    display: flex;
+    overflow: hidden;
+}
+.dropdown 
+{
+    overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #313133;
+    font-weight: bold;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown .dropbtn i
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus 
+{
+    color: var(--main-background);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(251, 251, 251);
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #333;
+    font-weight: 600;
+    padding: 4px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    color: var(--main-background);
+}
+.show
+{
+    display: block;
+}
