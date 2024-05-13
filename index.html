@@ -33,7 +33,7 @@
         <div class="navbar">
             <div class="dropdown">
                 <button class="dropbtn" onclick="dropMenu()"><i class="fa-regular fa-circle-question"></i>Help
-                    <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-down" onclick="dropMenu()"></i>
                 </button>
                 <div class="dropdown-content" id="myDropdown">
                     <a href="#">Link 1</a>
@@ -58,6 +58,43 @@
         </div>
     </header>
 
+    <!-- slideshow -->
+    <div class="slideshow" id="slideshow">
+        <div class="slides">
+            <div class="slide fade">
+                <div class="num">1 / 5</div>
+                <img src="imgs/img1.jpg" alt="no-img" style="width: 100%;">
+                <div class="text">Caption One</div>
+            </div>
+            <div class="slide fade">
+                <div class="num">2 / 5</div>
+                <img src="imgs/img2.png" alt="no-img" style="width: 100%;">
+                <div class="text">Caption Two</div>
+            </div>
+            <div class="slide fade">
+                <div class="num">3 / 5</div>
+                <img src="imgs/img3.png" alt="no-img" style="width: 100%;">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="slide fade">
+                <div class="num">4 / 5</div>
+                <img src="imgs/img4.jpg" alt="no-img" style="width: 100%;">
+                <div class="text">Caption Four</div>
+            </div>
+            <div class="slide fade">
+                <div class="num">5 / 5</div>
+                <img src="imgs/img5.png" alt="no-img" style="width: 100%;">
+                <div class="text">Caption Five</div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
     <!-- scripts -->
     <script src="js/main.js"></script>
 </body>
